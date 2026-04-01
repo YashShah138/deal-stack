@@ -7,11 +7,11 @@
 
 ### Authentication & Multi-Tenancy
 
-- [ ] **AUTH-01**: Admin account seeded on first deploy via ADMIN_EMAIL + ADMIN_PASSWORD env vars
-- [ ] **AUTH-02**: Auth middleware protects all routes and API endpoints -- unauthenticated requests redirected to login
-- [ ] **AUTH-03**: User session persists across browser refresh using Supabase Auth + @supabase/ssr
+- [x] **AUTH-01**: Admin account seeded on first deploy via ADMIN_EMAIL + ADMIN_PASSWORD env vars
+- [x] **AUTH-02**: Auth middleware protects all routes and API endpoints -- unauthenticated requests redirected to login
+- [x] **AUTH-03**: User session persists across browser refresh using Supabase Auth + @supabase/ssr
 - [x] **AUTH-04**: Row-Level Security enforced at database level on all user-scoped tables (user_id FK + RLS policy)
-- [ ] **AUTH-05**: No public signup UI -- Phase 0 is invite-only via admin-created accounts
+- [x] **AUTH-05**: No public signup UI -- Phase 0 is invite-only via admin-created accounts
 - [x] **AUTH-06**: Permission model supports future plan tiers (free/pro/enterprise) via users.plan enum field
 
 ### Database Schema
@@ -175,11 +175,11 @@ These are deferred to Phase 1 SaaS launch.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| AUTH-01 | Phase 1 | Pending |
-| AUTH-02 | Phase 1 | Pending |
-| AUTH-03 | Phase 1 | Pending |
+| AUTH-01 | Phase 1 | Complete |
+| AUTH-02 | Phase 1 | Complete |
+| AUTH-03 | Phase 1 | Complete |
 | AUTH-04 | Phase 1 | Complete |
-| AUTH-05 | Phase 1 | Pending |
+| AUTH-05 | Phase 1 | Complete |
 | AUTH-06 | Phase 1 | Complete |
 | DB-01 | Phase 1 | Complete |
 | DB-02 | Phase 1 | Complete |
