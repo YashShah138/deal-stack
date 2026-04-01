@@ -10,20 +10,20 @@
 - [ ] **AUTH-01**: Admin account seeded on first deploy via ADMIN_EMAIL + ADMIN_PASSWORD env vars
 - [ ] **AUTH-02**: Auth middleware protects all routes and API endpoints -- unauthenticated requests redirected to login
 - [ ] **AUTH-03**: User session persists across browser refresh using Supabase Auth + @supabase/ssr
-- [ ] **AUTH-04**: Row-Level Security enforced at database level on all user-scoped tables (user_id FK + RLS policy)
+- [x] **AUTH-04**: Row-Level Security enforced at database level on all user-scoped tables (user_id FK + RLS policy)
 - [ ] **AUTH-05**: No public signup UI -- Phase 0 is invite-only via admin-created accounts
-- [ ] **AUTH-06**: Permission model supports future plan tiers (free/pro/enterprise) via users.plan enum field
+- [x] **AUTH-06**: Permission model supports future plan tiers (free/pro/enterprise) via users.plan enum field
 
 ### Database Schema
 
-- [ ] **DB-01**: Schema includes: users, user_settings, properties, deals, pipeline_stages, offers, comparables, analysis_results, pdf_reports, api_cache, api_usage_log
-- [ ] **DB-02**: All user-data tables have user_id FK referencing auth.users(id)
-- [ ] **DB-03**: users table includes Stripe-ready fields: stripe_customer_id (nullable), plan (enum), plan_status, plan_limits (JSONB)
-- [ ] **DB-04**: users table includes usage tracking fields: deals_analyzed_this_month, properties_tracked
-- [ ] **DB-05**: api_cache table stores: provider, endpoint/key, response_data (JSONB), created_at, expires_at
-- [ ] **DB-06**: api_usage_log stores: provider, endpoint, user_id (nullable), timestamp, cache_hit (bool)
-- [ ] **DB-07**: RLS enabled on every user-scoped table with SELECT/INSERT/UPDATE/DELETE policies
-- [ ] **DB-08**: Shared/market-level cache data (Census, Walk Score) has no user_id -- globally shared across users
+- [x] **DB-01**: Schema includes: users, user_settings, properties, deals, pipeline_stages, offers, comparables, analysis_results, pdf_reports, api_cache, api_usage_log
+- [x] **DB-02**: All user-data tables have user_id FK referencing auth.users(id)
+- [x] **DB-03**: users table includes Stripe-ready fields: stripe_customer_id (nullable), plan (enum), plan_status, plan_limits (JSONB)
+- [x] **DB-04**: users table includes usage tracking fields: deals_analyzed_this_month, properties_tracked
+- [x] **DB-05**: api_cache table stores: provider, endpoint/key, response_data (JSONB), created_at, expires_at
+- [x] **DB-06**: api_usage_log stores: provider, endpoint, user_id (nullable), timestamp, cache_hit (bool)
+- [x] **DB-07**: RLS enabled on every user-scoped table with SELECT/INSERT/UPDATE/DELETE policies
+- [x] **DB-08**: Shared/market-level cache data (Census, Walk Score) has no user_id -- globally shared across users
 
 ### User Settings
 
@@ -178,17 +178,17 @@ These are deferred to Phase 1 SaaS launch.
 | AUTH-01 | Phase 1 | Pending |
 | AUTH-02 | Phase 1 | Pending |
 | AUTH-03 | Phase 1 | Pending |
-| AUTH-04 | Phase 1 | Pending |
+| AUTH-04 | Phase 1 | Complete |
 | AUTH-05 | Phase 1 | Pending |
-| AUTH-06 | Phase 1 | Pending |
-| DB-01 | Phase 1 | Pending |
-| DB-02 | Phase 1 | Pending |
-| DB-03 | Phase 1 | Pending |
-| DB-04 | Phase 1 | Pending |
-| DB-05 | Phase 1 | Pending |
-| DB-06 | Phase 1 | Pending |
-| DB-07 | Phase 1 | Pending |
-| DB-08 | Phase 1 | Pending |
+| AUTH-06 | Phase 1 | Complete |
+| DB-01 | Phase 1 | Complete |
+| DB-02 | Phase 1 | Complete |
+| DB-03 | Phase 1 | Complete |
+| DB-04 | Phase 1 | Complete |
+| DB-05 | Phase 1 | Complete |
+| DB-06 | Phase 1 | Complete |
+| DB-07 | Phase 1 | Complete |
+| DB-08 | Phase 1 | Complete |
 | SETTINGS-01 | Phase 1 | Pending |
 | SETTINGS-02 | Phase 1 | Pending |
 | SETTINGS-03 | Phase 1 | Pending |

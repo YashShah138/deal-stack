@@ -34,7 +34,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 5 plans
 
 Plans:
-- [ ] 01-01: Project scaffold and Supabase schema — Next.js 14 project init, all database tables with migrations, RLS policies on every user-scoped table, admin user seed script
+- [x] 01-01: Project scaffold and Supabase schema — Next.js 14 project init, all database tables with migrations, RLS policies on every user-scoped table, admin user seed script
 - [ ] 01-02: Auth infrastructure — Supabase Auth with @supabase/ssr (browser/server/middleware clients), middleware protecting all routes, login page
 - [ ] 01-03: User settings model — user_settings table integration, DFW investor profile defaults, settings CRUD via server client
 - [ ] 01-04: Underwriting engine (TDD) — all financial formulas with decimal.js, deal score composite, fixer-upper ARV scenarios, 100% unit test coverage with Vitest
