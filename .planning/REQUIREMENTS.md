@@ -37,18 +37,18 @@
 
 ### Underwriting Engine
 
-- [ ] **UNDER-01**: Monthly P&I calculation: loan_amount x [r(1+r)^n] / [(1+r)^n - 1] -- unit tested against known amortization table values
-- [ ] **UNDER-02**: NOI = (annual_rent x (1 - vacancy_rate)) - operating_expenses -- unit tested
-- [ ] **UNDER-03**: Cap Rate = NOI / purchase_price -- unit tested
-- [ ] **UNDER-04**: Cash-on-Cash Return = annual_cash_flow / total_cash_invested -- unit tested
-- [ ] **UNDER-05**: DSCR = NOI / annual_debt_service -- unit tested
-- [ ] **UNDER-06**: GRM = purchase_price / annual_gross_rent -- unit tested
-- [ ] **UNDER-07**: Equity Year N = (purchase_price x (1 + appreciation_rate)^N) - remaining_loan_balance_year_N -- unit tested
-- [ ] **UNDER-08**: ARV Equity (fixer-upper) = ARV - (loan_amount + renovation_cost) -- unit tested
-- [ ] **UNDER-09**: Deal Score = weighted composite: CoC 25%, cap rate 20%, 5yr equity 20%, market score 15%, value-add upside 10%, comp validation 10% -- unit tested
-- [ ] **UNDER-10**: All financial math uses decimal.js (not native float) to avoid IEEE 754 precision errors
-- [ ] **UNDER-11**: Engine reads all assumptions from user settings -- zero hardcoded values
-- [ ] **UNDER-12**: Fixer-upper mode generates both pre-reno and post-reno (ARV) scenarios side by side
+- [x] **UNDER-01**: Monthly P&I calculation: loan_amount x [r(1+r)^n] / [(1+r)^n - 1] -- unit tested against known amortization table values
+- [x] **UNDER-02**: NOI = (annual_rent x (1 - vacancy_rate)) - operating_expenses -- unit tested
+- [x] **UNDER-03**: Cap Rate = NOI / purchase_price -- unit tested
+- [x] **UNDER-04**: Cash-on-Cash Return = annual_cash_flow / total_cash_invested -- unit tested
+- [x] **UNDER-05**: DSCR = NOI / annual_debt_service -- unit tested
+- [x] **UNDER-06**: GRM = purchase_price / annual_gross_rent -- unit tested
+- [x] **UNDER-07**: Equity Year N = (purchase_price x (1 + appreciation_rate)^N) - remaining_loan_balance_year_N -- unit tested
+- [x] **UNDER-08**: ARV Equity (fixer-upper) = ARV - (loan_amount + renovation_cost) -- unit tested
+- [x] **UNDER-09**: Deal Score = weighted composite: CoC 25%, cap rate 20%, 5yr equity 20%, market score 15%, value-add upside 10%, comp validation 10% -- unit tested
+- [x] **UNDER-10**: All financial math uses decimal.js (not native float) to avoid IEEE 754 precision errors
+- [x] **UNDER-11**: Engine reads all assumptions from user settings -- zero hardcoded values
+- [x] **UNDER-12**: Fixer-upper mode generates both pre-reno and post-reno (ARV) scenarios side by side
 
 ### Data Service & Caching
 
@@ -196,18 +196,18 @@ These are deferred to Phase 1 SaaS launch.
 | SETTINGS-05 | Phase 1 | Pending |
 | SETTINGS-06 | Phase 1 | Pending |
 | SETTINGS-07 | Phase 1 | Pending |
-| UNDER-01 | Phase 1 | Pending |
-| UNDER-02 | Phase 1 | Pending |
-| UNDER-03 | Phase 1 | Pending |
-| UNDER-04 | Phase 1 | Pending |
-| UNDER-05 | Phase 1 | Pending |
-| UNDER-06 | Phase 1 | Pending |
-| UNDER-07 | Phase 1 | Pending |
-| UNDER-08 | Phase 1 | Pending |
-| UNDER-09 | Phase 1 | Pending |
-| UNDER-10 | Phase 1 | Pending |
-| UNDER-11 | Phase 1 | Pending |
-| UNDER-12 | Phase 1 | Pending |
+| UNDER-01 | Phase 1 | Complete |
+| UNDER-02 | Phase 1 | Complete |
+| UNDER-03 | Phase 1 | Complete |
+| UNDER-04 | Phase 1 | Complete |
+| UNDER-05 | Phase 1 | Complete |
+| UNDER-06 | Phase 1 | Complete |
+| UNDER-07 | Phase 1 | Complete |
+| UNDER-08 | Phase 1 | Complete |
+| UNDER-09 | Phase 1 | Complete |
+| UNDER-10 | Phase 1 | Complete |
+| UNDER-11 | Phase 1 | Complete |
+| UNDER-12 | Phase 1 | Complete |
 | DATA-01 | Phase 2 | Pending |
 | DATA-02 | Phase 2 | Pending |
 | DATA-03 | Phase 2 | Pending |

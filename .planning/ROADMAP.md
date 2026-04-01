@@ -37,7 +37,7 @@ Plans:
 - [x] 01-01: Project scaffold and Supabase schema — Next.js 14 project init, all database tables with migrations, RLS policies on every user-scoped table, admin user seed script
 - [x] 01-02: Auth infrastructure — Supabase Auth with @supabase/ssr (browser/server/middleware clients), middleware protecting all routes, login page
 - [ ] 01-03: User settings model — user_settings table integration, DFW investor profile defaults, settings CRUD via server client
-- [ ] 01-04: Underwriting engine (TDD) — all financial formulas with decimal.js, deal score composite, fixer-upper ARV scenarios, 100% unit test coverage with Vitest
+- [x] 01-04: Underwriting engine (TDD) — all financial formulas with decimal.js, deal score composite, fixer-upper ARV scenarios, 100% unit test coverage with Vitest
 - [ ] 01-05: PDF test harness — puppeteer-core + @sparticuz/chromium rendering hardcoded deal to Internal and External PDF, Supabase Storage upload, Vercel preview validation
 
 ### Phase 2: Data Services
