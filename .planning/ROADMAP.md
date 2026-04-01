@@ -38,7 +38,7 @@ Plans:
 - [x] 01-02: Auth infrastructure — Supabase Auth with @supabase/ssr (browser/server/middleware clients), middleware protecting all routes, login page
 - [x] 01-03: User settings model — user_settings table integration, DFW investor profile defaults, settings CRUD via server client
 - [x] 01-04: Underwriting engine (TDD) — all financial formulas with decimal.js, deal score composite, fixer-upper ARV scenarios, 100% unit test coverage with Vitest
-- [ ] 01-05: PDF test harness — puppeteer-core + @sparticuz/chromium rendering hardcoded deal to Internal and External PDF, Supabase Storage upload, Vercel preview validation
+- [x] 01-05: PDF test harness — puppeteer-core + @sparticuz/chromium rendering hardcoded deal to Internal and External PDF, Supabase Storage upload, Vercel preview validation
 
 ### Phase 2: Data Services
 **Goal**: All external data sources wired up behind the DataService abstraction with cache-first strategy and full mock support, so no downstream code ever touches an external API directly
