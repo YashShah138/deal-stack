@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(gsd:discuss-phase)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "WebSearch",
+      "Skill(gsd:plan-phase)",
+      "Skill(gsd:execute-phase)",
+      "Skill(gsd:progress)",
+      "Bash(node \"$HOME/.claude/get-shit-done/bin/gsd-tools.cjs\" init execute-phase 01-foundation)",
+      "Bash(npx tsc:*)",
+      "Bash(node \"$HOME/.claude/get-shit-done/bin/gsd-tools.cjs\" state advance-plan)",
+      "Bash(node \"$HOME/.claude/get-shit-done/bin/gsd-tools.cjs\" state update-progress)",
+      "Bash(node \"$HOME/.claude/get-shit-done/bin/gsd-tools.cjs\" state record-metric --phase \"01\" --plan \"03\" --duration \"1min\" --tasks \"1\" --files \"2\")",
+      "Bash(node \"$HOME/.claude/get-shit-done/bin/gsd-tools.cjs\" state add-decision --phase \"01\" --summary \"Service layer uses server client only for RLS enforcement; defense-in-depth user_id filter\")",
+      "Bash(node \"$HOME/.claude/get-shit-done/bin/gsd-tools.cjs\" state record-session --stopped-at \"Completed 01-03-PLAN.md\")",
+      "Bash(\\\\ node:*)",
+      "Bash(node $HOME/.claude/get-shit-done/bin/gsd-tools.cjs init execute-phase 01-foundation)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(node:*)",
+      "Bash(npx vitest:*)"
+    ]
+  }
+}
