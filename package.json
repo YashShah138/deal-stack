@@ -13,10 +13,12 @@
     "seed": "npx tsx scripts/seed-admin.ts"
   },
   "dependencies": {
+    "@sparticuz/chromium": "^143.0.4",
     "@supabase/ssr": "^0.10.0",
     "@supabase/supabase-js": "^2.101.1",
     "decimal.js": "^10.6.0",
     "next": "14.2.35",
+    "puppeteer-core": "^24.40.0",
     "react": "^18",
     "react-dom": "^18",
     "zod": "^3.25.76"
