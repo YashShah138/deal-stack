@@ -150,6 +150,20 @@ describe('calculateRemainingBalance', () => {
     const bal120 = calculateRemainingBalance(240_000, 7, 30, 120);
     expect(bal60).toBeGreaterThan(bal120);
   });
+
+  it('returns 0 for $0 loan amount', () => {
+    expect(calculateRemainingBalance(0, 7, 30, 60)).toBe(0);
+  });
+
+  it('handles 0% interest rate with linear paydown', () => {
+    // $360,000 loan, 0% rate, 30yr, 180 months paid (half)
+    // remaining = 360000 - (360000 * 180 / 360) = 180000
+    expect(calculateRemainingBalance(360_000, 0, 30, 180)).toBe(180000);
+  });
+
+  it('returns 0 when months paid exceeds term', () => {
+    expect(calculateRemainingBalance(240_000, 7, 30, 400)).toBe(0);
+  });
 });
 
 // ========== UNDER-08: ARV Equity ==========
@@ -205,7 +219,7 @@ describe('runUnderwriting', () => {
 
     // Derived metrics
     expect(result.annual_debt_service).toBe(19160.76);
-    expect(result.annual_cash_flow).toBe(10920 - 19160.76);
+    expect(result.annual_cash_flow).toBe(-8240.76);
     expect(result.monthly_cash_flow).toBeCloseTo((10920 - 19160.76) / 12, 2);
     expect(result.cap_rate).toBe(3.64);
     expect(result.grm).toBe(12.5);
