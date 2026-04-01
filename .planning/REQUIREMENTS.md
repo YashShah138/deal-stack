@@ -27,13 +27,13 @@
 
 ### User Settings
 
-- [ ] **SETTINGS-01**: Per-user settings stored in user_settings table with user_id FK
-- [ ] **SETTINGS-02**: Settings include: target_market, target_submarkets (text[]), property_types (text[]), price_ceiling, down_payment_pct
-- [ ] **SETTINGS-03**: Settings include underwriting assumptions: property_tax_rate, mgmt_pct, vacancy_pct, maintenance_pct, capex_pct, closing_costs_pct
-- [ ] **SETTINGS-04**: Settings include: acquisition_goal_count, acquisition_goal_years, alert_email, mortgage_rate_override (nullable)
-- [ ] **SETTINGS-05**: Settings include: finder_cron_interval, notification_preferences (JSONB)
-- [ ] **SETTINGS-06**: Settings include branding: logo_url (nullable), accent_color (nullable) for external PDF white-labeling
-- [ ] **SETTINGS-07**: Default settings seeded for admin user on first deploy matching the DFW investor profile
+- [x] **SETTINGS-01**: Per-user settings stored in user_settings table with user_id FK
+- [x] **SETTINGS-02**: Settings include: target_market, target_submarkets (text[]), property_types (text[]), price_ceiling, down_payment_pct
+- [x] **SETTINGS-03**: Settings include underwriting assumptions: property_tax_rate, mgmt_pct, vacancy_pct, maintenance_pct, capex_pct, closing_costs_pct
+- [x] **SETTINGS-04**: Settings include: acquisition_goal_count, acquisition_goal_years, alert_email, mortgage_rate_override (nullable)
+- [x] **SETTINGS-05**: Settings include: finder_cron_interval, notification_preferences (JSONB)
+- [x] **SETTINGS-06**: Settings include branding: logo_url (nullable), accent_color (nullable) for external PDF white-labeling
+- [x] **SETTINGS-07**: Default settings seeded for admin user on first deploy matching the DFW investor profile
 
 ### Underwriting Engine
 
@@ -189,13 +189,13 @@ These are deferred to Phase 1 SaaS launch.
 | DB-06 | Phase 1 | Complete |
 | DB-07 | Phase 1 | Complete |
 | DB-08 | Phase 1 | Complete |
-| SETTINGS-01 | Phase 1 | Pending |
-| SETTINGS-02 | Phase 1 | Pending |
-| SETTINGS-03 | Phase 1 | Pending |
-| SETTINGS-04 | Phase 1 | Pending |
-| SETTINGS-05 | Phase 1 | Pending |
-| SETTINGS-06 | Phase 1 | Pending |
-| SETTINGS-07 | Phase 1 | Pending |
+| SETTINGS-01 | Phase 1 | Complete |
+| SETTINGS-02 | Phase 1 | Complete |
+| SETTINGS-03 | Phase 1 | Complete |
+| SETTINGS-04 | Phase 1 | Complete |
+| SETTINGS-05 | Phase 1 | Complete |
+| SETTINGS-06 | Phase 1 | Complete |
+| SETTINGS-07 | Phase 1 | Complete |
 | UNDER-01 | Phase 1 | Complete |
 | UNDER-02 | Phase 1 | Complete |
 | UNDER-03 | Phase 1 | Complete |
