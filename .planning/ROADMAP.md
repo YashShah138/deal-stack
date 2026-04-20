@@ -53,7 +53,7 @@ Plans:
 **Plans**: 4 plans
 
 Plans:
-- [ ] 02-01: DataService abstraction and cache layer — cache-first architecture, api_cache table integration, address normalization, cache key generation, TTL enforcement
+- [x] 02-01: DataService abstraction and cache layer — cache-first architecture, api_cache table integration, address normalization, cache key generation, TTL enforcement
 - [ ] 02-02: Rentcast provider — property details, rent estimate, sale/rental comps, market trends endpoints with 30-day cache, hard 50-call/month global limit enforcement
 - [ ] 02-03: Census and Walk Score providers — Census Geocoder (permanent cache), Census ACS (90-day FIPS cache), Walk Score (permanent address cache)
 - [ ] 02-04: Mock provider and integration tests — mock implementations for all providers, MOCK_APIS=true as dev default, integration tests against mock data, api_usage_log verification
